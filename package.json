@@ -1,0 +1,51 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop -p 9000",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "cy:open": "cypress open",
+    "test:e2e": "start-server-and-test develop http://localhost:9000 cy:open",
+    "test": "jest",
+    "test:coverage": "jest --verbose --coverage"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.16.1",
+    "gatsby-plugin-manifest": "^2.2.23",
+    "gatsby-plugin-netlify": "^2.1.22",
+    "gatsby-plugin-react-helmet": "^3.1.13",
+    "gatsby-plugin-react-svg": "^2.1.2",
+    "gatsby-plugin-styled-components": "^3.1.11",
+    "gatsby-source-prismic": "^2.3.0-alpha.3",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
+    "react-player": "^1.13.0",
+    "styled-components": "^4.4.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.9.0",
+    "babel-preset-gatsby": "^0.2.20",
+    "cypress": "^3.4.1",
+    "dotenv": "^8.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.10.2",
+    "start-server-and-test": "^1.10.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Render empty header 1`] = `
+<div
+  className="sc-bwzfXH boNbIZ"
+/>
+`;
+
+exports[`Header Render empty header 2`] = `
+<div
+  className="sc-bwzfXH boNbIZ"
+>
+  <div
+    className="sc-bdVaJa hKAetY"
+  >
+    <test-file-stub />
+    Cognitive
+  </div>
+  <div
+    className="sc-bxivhb gZdxfa"
+  >
+    <test-file-stub />
+    <test-file-stub />
+    <input
+      className="sc-ifAKCX kSsUJV"
+      placeholder="Search for projects or forum topics"
+    />
+  </div>
+  <ul
+    className="sc-htpNat kqiIjl"
+  >
+    <li>
+      Learn
+    </li>
+    <li>
+      Projects
+    </li>
+    <li>
+      Forums
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Header Render full header 1`] = `
+<div
+  className="sc-bwzfXH boNbIZ"
+>
+  <div
+    className="sc-bdVaJa hKAetY"
+  >
+    <test-file-stub />
+    Cognitive
+  </div>
+  <div
+    className="sc-bxivhb gZdxfa"
+  >
+    <test-file-stub />
+    <test-file-stub />
+    <input
+      className="sc-ifAKCX kSsUJV"
+      placeholder="Search for projects or forum topics"
+    />
+  </div>
+  <ul
+    className="sc-htpNat kqiIjl"
+  >
+    <li>
+      Learn
+    </li>
+    <li>
+      Projects
+    </li>
+    <li>
+      Forums
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Header renders correctly 1`] = `
+<div
+  className="sc-bdVaJa hDAbLH"
+/>
+`;
