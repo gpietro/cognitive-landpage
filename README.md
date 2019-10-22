@@ -1,44 +1,74 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  SSUT Assignment
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+## TODO
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+- Improve responsive layout and CSS
+- Better solution to i18n pages
+- Add React PropTypes & defaultProps
+- Add more testing
+- Add versioning system with tags
+- Define missing custom types
 
-## 🚀 Quick start
+## Step by step overview
 
-1.  **Create a Gatsby site.**
+1. Create a new Git repository
+2. Create a new Gatsby project defining the page Layout and Components using gatsby templates instead of pages to be able to add translated pages.
+3. Create a new repository in Prismic
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+   - Define custom types.
+   - Add second language for the content
+   - Generate API_KEY. Insert API_KEY in .env.development and .env.production
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+4. When custom types are created, define graqhql queries for each resource.
+5. Netlify: create new site from the git repository
 
-1.  **Start developing.**
+   - Generate Prismic webhook link and copy it to a new Netlify build hook. This allow to deliver automatically new content changes when published.
 
-    Navigate into your new site’s directory and start it up.
+6. **Deploy the project with git push**
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+## Strategy for delivering high quality and tested code
 
-1.  **Open the source code and start editing!**
+1. Run unit tests for componets with jest and an end-to-end test with Cypress in CI
+2. Create a staging environment beside production and development
+3. Implement a tagging system in git for releasing specific versions and release branches.
 
-    Your site is now running at `http://localhost:8000`!
+## Technical landscape
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+1. Site generator: Gatsby
+2. Headless CMS: Prismic
+3. Testing: Jest, Cypress
+4. CI: Github hook + Netlify
+5. Host: Netlify
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+## Conclusion
+
+I did spend lot of time understanding how to add translated content with Gatsby since I initially started working with pages. I don’t like the solution I came up; the index page is empty and there is always a redirect to /en-us, but I didn’t have time to find a better one.
+Test coverage can be improved and also React component styling usage.
+Prismic is a good headless CMS but I would probably give it a try to strapi in the next project because it seems to give more flexibility and features.
+Netlify was really easy to setup and configure, definitely a good option to keep in mind. I wanted to try out and add GitLab but I didn't have time anymore.
+
+## Future development
+
+- Implement page links and create new pages
+
+---
+
+## 🚀 Start development
+
+1. **Navigate into your new site’s directory and start it up.**
+
+   ```shell
+   cd cognitive-landscape/
+   npm start
+   ```
+
+1. **Open the source code and start editing!**
+
+   Your site is now running at `http://localhost:9000`!
+
+   _Note: You'll also see a second link: _`http://localhost:9000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
 ## 🧐 What's inside?
 
