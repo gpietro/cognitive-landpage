@@ -4,7 +4,8 @@
 
 ## TODO
 
-- Improve responsive layout and CSS
+- Improve responsive layout and CSS styling
+- Update useStaticQuery to Query(lang: {$eq: $language})
 - Better solution to i18n pages
 - Add React PropTypes & defaultProps
 - Add more testing
@@ -42,13 +43,6 @@
 4. CI: Github hook + Netlify
 5. Host: Netlify
 
-## Conclusion
-
-I did spend lot of time understanding how to add translated content with Gatsby since I initially started working with pages. I don’t like the solution I came up; the index page is empty and there is always a redirect to /en-us, but I didn’t have time to find a better one.
-Test coverage can be improved and also React component styling usage.
-Prismic is a good headless CMS but I would probably give it a try to strapi in the next project because it seems to give more flexibility and features.
-Netlify was really easy to setup and configure, definitely a good option to keep in mind. I wanted to try out and add GitLab but I didn't have time anymore.
-
 ## Future development
 
 1. Run Chrome audit and Google page speed for performance optimization
@@ -56,6 +50,13 @@ Netlify was really easy to setup and configure, definitely a good option to keep
    - page links
    - search
    - login and signup
+
+## Conclusion
+
+I did spend lot of time understanding how to add translated content with Gatsby since I initially started working with pages and StaticQuery. I don’t like the solution I came up with because the index page is empty and there is always a redirect to /en-us, but I didn’t have time to find a better one.
+Test coverage can be improved and also React component styling usage.
+Prismic is a good headless CMS but I would probably give it a try to strapi in the next project because it seems to give more flexibility and features.
+Netlify was really easy to setup and configure, definitely a good option to keep in mind. I wanted to try out and add GitLab but I didn't have time anymore.
 
 ---
 
