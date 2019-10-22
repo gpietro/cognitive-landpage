@@ -18,7 +18,7 @@
 3. Create a new repository in Prismic
 
    - Define custom types.
-   - Add second language for the content
+   - Add a second language
    - Generate API_KEY. Insert API_KEY in .env.development and .env.production
 
 4. When custom types are created, define graqhql queries for each resource.
@@ -26,7 +26,7 @@
 
    - Generate Prismic webhook link and copy it to a new Netlify build hook. This allow to deliver automatically new content changes when published.
 
-6. **Deploy the project with git push**
+6. Deploy the project by commiting and pushing your changes.
 
 ## Strategy for delivering high quality and tested code
 
