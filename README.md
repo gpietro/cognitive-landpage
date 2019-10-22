@@ -51,7 +51,11 @@ Netlify was really easy to setup and configure, definitely a good option to keep
 
 ## Future development
 
-- Implement page links and create new pages
+1. Run Chrome audit and Google page speed for performance optimization
+2. Missing features
+   - page links
+   - search
+   - login and signup
 
 ---
 
