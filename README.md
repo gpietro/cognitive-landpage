@@ -53,9 +53,9 @@
 
 ## Conclusion
 
-I did spend lot of time understanding how to add translated content with Gatsby since I initially started working with pages and StaticQuery. I don’t like the solution I came up with because the index page is empty and there is always a redirect to /en-us, but I didn’t have time to find a better one.
+I did spend lot of time understanding how to add translated content with Gatsby since it's my first project with it and I started working with pages and StaticQuery. I don’t like the solution I came up with because the index page is empty and there is always a redirect to /en-us, but I didn’t have time to find a better one.
 Test coverage can be improved and also React component styling usage.
-Prismic is a good headless CMS but I would probably give it a try to strapi in the next project because it seems to give more flexibility and features.
+Prismic is a good headless CMS but I would probably try strapi in the next project because it seems to give more flexibility and features.
 Netlify was really easy to setup and configure, definitely a good option to keep in mind. I wanted to try out and add GitLab but I didn't have time anymore.
 
 ---
