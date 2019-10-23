@@ -44,26 +44,18 @@ const Video = styled.div`
   min-height: 250px;
 `
 
-export default () => (
-  <Container>
-    <Content>
-      <Title>About Cognetive Catalyst</Title>
-      <Text>
-        Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor
-        urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec
-        sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at
-        condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor
-        quis porttitor.
-      </Text>
-      <AboutButton>Get started</AboutButton>
-    </Content>
-    <Video>
-      <ReactPlayer
-        width="100%"
-        height="100%"
-        url="https://youtu.be/p61Ejrw8thM"
-        playing
-      />
-    </Video>
-  </Container>
-)
+export default ({ data }) => {
+  const { title, description, button_content, video_link } = data
+  return (
+    <Container>
+      <Content>
+        <Title>{title.text}</Title>
+        <Text>{description.text}</Text>
+        <AboutButton>{button_content}</AboutButton>
+      </Content>
+      <Video>
+        <ReactPlayer width="100%" height="100%" url={video_link.url} playing />
+      </Video>
+    </Container>
+  )
+}

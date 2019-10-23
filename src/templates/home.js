@@ -54,7 +54,7 @@ const Menu = styled.ul`
 export default props => {
   const {
     // pageContext: { language },
-    data: { prismicJumbotron, prismicProjects },
+    data: { prismicJumbotron, prismicProjects, prismicAbout },
   } = props
   return (
     <>
@@ -79,7 +79,7 @@ export default props => {
           <Button>Log in with Github</Button>
         </Header>
         <Jumbotron data={prismicJumbotron.data} />
-        <SectionAbout />
+        <SectionAbout data={prismicAbout.data} />
         <SectionDevelopers />
         <SectionProjects data={prismicProjects.data} />
         <Footer />
@@ -131,6 +131,20 @@ export const query = graphql`
           description {
             text
           }
+        }
+      }
+    }
+    prismicAbout(lang: { eq: $language }) {
+      data {
+        button_content
+        description {
+          text
+        }
+        title {
+          text
+        }
+        video_link {
+          url
         }
       }
     }

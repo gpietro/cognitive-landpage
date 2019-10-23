@@ -6,6 +6,12 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 33%;
+  min-width: 230px;
+  align-items: center;
+`
+
+const Content = styled.div`
   width: 210px;
   height: 200px;
   background-color: #ffcf27;
@@ -29,10 +35,12 @@ const More = styled(Link)`
 
 export default ({ project: { language, title, developers, description } }) => (
   <Container>
-    <p>{language.text}</p>
-    <Title>{title.text}</Title>
-    <p>{developers.text}</p>
-    <p>{description.text}</p>
-    <More to="#">Read more...</More>
+    <Content>
+      <p>{language.text}</p>
+      <Title>{title.text}</Title>
+      <p>{developers.text}</p>
+      <p>{description.text}</p>
+      <More to="#">Read more...</More>
+    </Content>
   </Container>
 )
