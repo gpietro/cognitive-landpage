@@ -37,12 +37,17 @@ const Text = styled.div`
   margin-bottom: 10px;
 `
 
+const BackgroundImage = styled(Background)`
+  position: absolute;
+  z-index: 0;
+`
+
 export default ({ data }) => {
   const { title, subtitle, description, buttoncontent } = data
 
   return (
     <Container>
-      <Background />
+      <BackgroundImage />
       <Title dangerouslySetInnerHTML={{ __html: title.html }} />
       <Subtitle>{subtitle.text}</Subtitle>
       <Text>{description.text}</Text>
