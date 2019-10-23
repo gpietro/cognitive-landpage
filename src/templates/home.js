@@ -1,9 +1,8 @@
 import React from "react"
 import styled, { createGlobalStyle } from "styled-components"
-import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
 import Header, { Logo, SearchBar } from "../components/Header"
-import Menu from "../components/Menu"
 import Button from "../components/Button"
 import Jumbotron from "../components/Jumbotron"
 import SectionAbout from "../components/SectionAbout"
@@ -12,7 +11,7 @@ import SectionProjects from "../components/SectionProjects/SectionProjects"
 import Footer from "../components/Footer"
 
 const Container = styled.div`
-  max-width: 900px;
+  max-width: 968px;
   margin: 0 auto;
 `
 
@@ -39,6 +38,19 @@ p {
 }
 `
 
+const Menu = styled.ul`
+  font-size: 0.8em;
+  display: flex;
+  list-style-type: none;
+  li {
+    margin: 0 15px;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+`
+
 export default props => {
   const {
     // pageContext: { language },
@@ -55,7 +67,14 @@ export default props => {
         <Header>
           <Logo />
           <SearchBar />
-          <Menu menuItems={["Learn", "Projects", "Forums"]} />
+
+          <Menu>
+            {["Learn", "Projects", "Forums"].map(menuItem => (
+              <li>
+                <Link to={`#/${menuItem}`}>{menuItem}</Link>
+              </li>
+            ))}
+          </Menu>
           <Button>Register</Button>
           <Button>Log in with Github</Button>
         </Header>

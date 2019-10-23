@@ -6,7 +6,7 @@ const Header = styled.div`
   color: #363c44;
   background-color: #ffcf27;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
 `
 
 export default ({ children }) => <Header>{children}</Header>

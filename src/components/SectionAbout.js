@@ -6,9 +6,11 @@ import ReactPlayer from "react-player"
 const Container = styled.div`
   display: flex;
   background: #9855d4;
-  padding: 60px 0;
   @media (max-width: 768px) {
     flex-direction: column;
+  }
+  & > div {
+    margin: 100px 40px;
   }
 `
 
@@ -18,10 +20,6 @@ const Content = styled.div`
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding: 20px;
-  & div {
-    margin-bottom: 10px;
-  }
 `
 
 const Text = styled.p`
@@ -36,11 +34,14 @@ const Title = styled(Text)`
 
 const AboutButton = styled(Button)`
   color: #fff;
+  border-color: #fff;
+  background: none;
+  margin: 5px 0 0 0;
 `
 
 const Video = styled.div`
   flex: 1;
-  margin: 10px 50px;
+  min-height: 250px;
 `
 
 export default () => (
