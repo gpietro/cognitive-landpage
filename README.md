@@ -65,6 +65,7 @@ Netlify was really easy to setup and configure, definitely a good option to keep
 
    ```shell
    cd cognitive-landscape/
+   npm i
    npm start
    ```
 
