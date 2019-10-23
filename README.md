@@ -4,13 +4,12 @@
 
 ## TODO
 
-- Improve responsive layout and CSS styling
-- Update useStaticQuery to Query(lang: {$eq: $language})
-- Better solution to i18n pages
-- Add React PropTypes & defaultProps
-- Add more testing
-- Add versioning system with tags
-- Define missing custom types
+- Improve responsive layout and CSS styling.
+- Add missing CustomTypes in Prismic: Header, Developers section, Footer.
+- Find a better solution to i18n pages to avoid initial redirect.
+- Add React PropTypes & defaultProps.
+- Add more testing. I wanted to install the base tooling and implement the workflow with Cypress but I didn't have time to actually add real tests.
+- Add versioning system with tags for deploying the app.
 
 ## Step by step overview
 
