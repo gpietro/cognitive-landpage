@@ -40,6 +40,7 @@ const Menu = styled.ul`
 
 const Cards = styled.div`
   display: flex;
+  max-width: 960px;
   text-align: left;
   justify-content: space-evenly;
   align-items: left;

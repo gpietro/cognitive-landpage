@@ -10,11 +10,6 @@ import SectionDevelopers from "../components/SectionDevelopers"
 import SectionProjects from "../components/SectionProjects/SectionProjects"
 import Footer from "../components/Footer"
 
-const Container = styled.div`
-  max-width: 968px;
-  margin: 0 auto;
-`
-
 const GlobalStyle = createGlobalStyle`
 html {
   touch-action: manipulation;  
@@ -63,27 +58,25 @@ export default props => {
         <title>Cognitive</title>
       </Helmet>
       <GlobalStyle />
-      <Container>
-        <Header>
-          <Logo />
-          <SearchBar />
+      <Header>
+        <Logo />
+        <SearchBar />
 
-          <Menu>
-            {["Learn", "Projects", "Forums"].map(menuItem => (
-              <li>
-                <Link to={`#/${menuItem}`}>{menuItem}</Link>
-              </li>
-            ))}
-          </Menu>
-          <Button>Register</Button>
-          <Button>Log in with Github</Button>
-        </Header>
-        <Jumbotron data={prismicJumbotron.data} />
-        <SectionAbout data={prismicAbout.data} />
-        <SectionDevelopers />
-        <SectionProjects data={prismicProjects.data} />
-        <Footer />
-      </Container>
+        <Menu>
+          {["Learn", "Projects", "Forums"].map(menuItem => (
+            <li>
+              <Link to={`#/${menuItem}`}>{menuItem}</Link>
+            </li>
+          ))}
+        </Menu>
+        <Button>Register</Button>
+        <Button>Log in with Github</Button>
+      </Header>
+      <Jumbotron data={prismicJumbotron.data} />
+      <SectionAbout data={prismicAbout.data} />
+      <SectionDevelopers />
+      <SectionProjects data={prismicProjects.data} />
+      <Footer />
     </>
   )
 }

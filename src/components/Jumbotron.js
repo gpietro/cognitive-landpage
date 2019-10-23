@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Background from "../images/assets/background.svg"
 import Button from "./Button"
 
 const Container = styled.div`
@@ -9,6 +10,10 @@ const Container = styled.div`
   height: 380px;
   background-color: #ffcf27;
   padding: 20px 0;
+  & div,
+  & button {
+    z-index: 2;
+  }
 `
 
 const Title = styled.div`
@@ -37,6 +42,7 @@ export default ({ data }) => {
 
   return (
     <Container>
+      <Background />
       <Title dangerouslySetInnerHTML={{ __html: title.html }} />
       <Subtitle>{subtitle.text}</Subtitle>
       <Text>{description.text}</Text>
