@@ -57,6 +57,8 @@ Test coverage can be improved and also React component styling usage.
 Prismic is a good headless CMS but I would probably try strapi in the next project because it seems to give more flexibility and features.
 Netlify was really easy to setup and configure, definitely a good option to keep in mind. I wanted to try out and add GitLab but I didn't have time anymore.
 
+[Live demo](https://ssut.netlify.com/)
+
 ---
 
 ## 🚀 Start development
